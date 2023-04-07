@@ -44,12 +44,12 @@ export default function Household() {
             <Card sx={{ maxWidth: 400 , boxShadow: 4 }}>
             <CardMedia
                 sx={{ height: 300 }}
-                image={'/assets/images/ordernow/documentboxsize/small_box_1.jpg'}
+                image={'/assets/images/ordernow/household/1bhk.jpeg'}
                 title="green iguana"
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                Small Box 1
+                1 BHK STORAGE <Typography> 200 sq.ft</Typography>
                 </Typography>
             </CardContent>
             <CardActions>
@@ -67,12 +67,12 @@ export default function Household() {
                 <Card sx={{ maxWidth: 400 ,boxShadow: 4 }}>
                 <CardMedia
                     sx={{ height: 300 }}
-                    image={'/assets/images/ordernow/documentboxsize/small_box_2.webp'}
+                    image={'/assets/images/ordernow/household/2bhk.jpeg'}
                     title="green iguana"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                    Small box 2
+                    2 BHK STORAGE <Typography> 250 sq.ft</Typography>
                     </Typography>
                 </CardContent>
                 <CardActions>
@@ -89,12 +89,12 @@ export default function Household() {
                 <Card sx={{ maxWidth: 400,boxShadow: 4 }}>
                 <CardMedia
                     sx={{ height:300 }}
-                    image={'/assets/images/ordernow/documentboxsize/medium_box_1.jpg'}
+                    image={'/assets/images/ordernow/household/3bhk.jpeg'}
                     title="green iguana"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                    Medium Box 1
+                    3 BHK STORAGE <Typography> 400 sq.ft</Typography>
                     </Typography>
                 </CardContent>
                 <CardActions>
@@ -107,72 +107,7 @@ export default function Household() {
                 </CardActions>
                 </Card>
         </Grid>
-        <Grid item xs={4}>
-            <Card sx={{ maxWidth: 400 , boxShadow: 4}}>
-            <CardMedia
-                sx={{ height: 300 }}
-                image={'/assets/images/ordernow/documentboxsize/medium_box_2.jpg'}
-                title="green iguana"
-            />
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                Medium box 2
-                </Typography>
-            </CardContent>
-            <CardActions>
-            <IconButton color="primary" aria-label="add to shopping cart">
-                <AddShoppingCartIcon />
-            </IconButton>
-            <IconButton color="primary" aria-label="More info">
-                <InfoIcon />
-              </IconButton>
-            </CardActions>
-            </Card>
-        </Grid>
-        <Grid item xs={4}>
-            <Card sx={{ maxWidth: 400 , boxShadow: 4}}>
-            <CardMedia
-                sx={{ height: 300 }}
-                image={'/assets/images/ordernow/documentboxsize/large_box_1.jfif'}
-                title="green iguana"
-            />
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                Large Box 1
-                </Typography>
-            </CardContent>
-            <CardActions>
-            <IconButton color="primary" aria-label="add to shopping cart">
-                <AddShoppingCartIcon />
-            </IconButton>
-            <IconButton color="primary" aria-label="More info">
-                <InfoIcon />
-            </IconButton>
-            </CardActions>
-            </Card>
-        </Grid>
-        <Grid item xs={4}>
-            <Card sx={{ maxWidth: 400 , boxShadow: 4 }}>
-            <CardMedia
-                sx={{ height: 300 }}
-                image={'/assets/images/ordernow/documentboxsize/large_box_2.jpg'}
-                title="green iguana"
-            />
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-               Large Box 2
-                </Typography>
-            </CardContent>
-            <CardActions>
-            <IconButton color="primary" aria-label="add to shopping cart">
-                <AddShoppingCartIcon />
-            </IconButton>
-            <IconButton color="primary" aria-label="More info">
-                <InfoIcon />
-            </IconButton>
-            </CardActions>
-            </Card>
-        </Grid>
+        
         </Grid>
 
 
