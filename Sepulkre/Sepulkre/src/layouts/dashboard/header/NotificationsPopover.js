@@ -84,7 +84,10 @@ export default function NotificationsPopover() {
 
   const [open, setOpen] = useState(null);
 
+  const [cart, setCart] = useState({});
+
   const handleOpen = (event) => {
+    fetch("http://localhost:8090/cart/anand").then(res => res.json()).then(setCart);
     setOpen(event.currentTarget);
   };
 
@@ -127,49 +130,11 @@ export default function NotificationsPopover() {
       >
         <Box sx={{ display: 'flex', alignItems: 'center', py: 2, px: 2.5 }}>
           <Box sx={{ flexGrow: 1 }}>
-            <Typography variant="subtitle1">Notifications</Typography>
+            <Typography variant="subtitle1">Small Box 1 X {cart['SB1Count']}</Typography>
+            <Typography variant="subtitle1">Small Box 2 X {cart['SB2Count']}</Typography>
+            <Typography variant="subtitle1">Medium Box 1 X {cart['MB1Count']}</Typography>
           </Box>
-
-          {/* {totalUnRead > 0 && (
-            <Tooltip title=" Mark all as read">
-              <IconButton color="primary" onClick={handleMarkAllAsRead}>
-                <Iconify icon="eva:done-all-fill" />
-              </IconButton>
-            </Tooltip>
-          )} */}
         </Box>
-
-        <Divider sx={{ borderStyle: 'dashed' }} />
-
-        <Scrollbar sx={{ height: { xs: 340, sm: 'auto' } }}>
-          <List
-            disablePadding
-            subheader={
-              <ListSubheader disableSticky sx={{ py: 1, px: 2.5, typography: 'overline' }}>
-                New
-              </ListSubheader>
-            }
-          >
-            {notifications.slice(0, 2).map((notification) => (
-              <NotificationItem key={notification.id} notification={notification} />
-            ))}
-          </List>
-
-          <List
-            disablePadding
-            subheader={
-              <ListSubheader disableSticky sx={{ py: 1, px: 2.5, typography: 'overline' }}>
-                Before that
-              </ListSubheader>
-            }
-          >
-            {notifications.slice(2, 5).map((notification) => (
-              <NotificationItem key={notification.id} notification={notification} />
-            ))}
-          </List>
-        </Scrollbar>
-
-        <Divider sx={{ borderStyle: 'dashed' }} />
 
         <Box sx={{ p: 1 }}>
           <Button fullWidth disableRipple>

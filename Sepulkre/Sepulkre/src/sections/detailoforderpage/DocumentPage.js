@@ -30,6 +30,7 @@ export default function DocumentPage() {
     const [MB2Count, setMB2Count] = React.useState(0);
     const [LB1Count, setLB1Count] = React.useState(0);
     const [LB2Count, setLB2Count] = React.useState(0);
+    const [buffer, setBuffer] = React.useState(0);
     
     React.useEffect(updateCart,[SB1Count, SB2Count, MB1Count, MB2Count, LB1Count, LB2Count]);
 
@@ -41,9 +42,14 @@ export default function DocumentPage() {
                 SB1Count, SB2Count, MB1Count, MB2Count, LB1Count, LB2Count
             })
         };
-        fetch("http://localhost:8090/cart/", requestOptions)
-            .then(res => res.text())
-            .then(res => alert("Your Order Id: " + res));
+        fetch("http://localhost:8090/cart/", requestOptions);
+        // setBuffer(buffer + 1);
+        // if(buffer == 5) {
+        //     setBuffer(0);
+        //     fetch("http://localhost:8090/cart/", requestOptions);
+        // }        
+        // else
+        //     setTimeout(() => fetch("http://localhost:8090/cart/", requestOptions), 20000);
     }
   
     return (
