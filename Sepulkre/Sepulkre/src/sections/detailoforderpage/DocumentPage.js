@@ -78,7 +78,7 @@ export default function DocumentPage() {
             </CardContent>
             <CardActions>
             {
-            SB1Count == 0 &&
+            SB1Count === 0 &&
             <IconButton color="primary" aria-label="add to shopping cart" onClick={(e) => setSB1Count(SB1Count + 1)}>
                 <AddShoppingCartIcon />
             </IconButton>
@@ -122,7 +122,7 @@ export default function DocumentPage() {
                 </CardContent>
                 <CardActions>
             {
-            SB2Count == 0 &&
+            SB2Count === 0 &&
             <IconButton color="primary" aria-label="add to shopping cart" onClick={(e) => setSB2Count(SB2Count + 1)}>
                 <AddShoppingCartIcon />
             </IconButton>
@@ -165,7 +165,7 @@ export default function DocumentPage() {
                 </CardContent>
                 <CardActions>
             {
-            MB1Count == 0 &&
+            MB1Count === 0 &&
             <IconButton color="primary" aria-label="add to shopping cart" onClick={(e) => setMB1Count(MB1Count + 1)}>
                 <AddShoppingCartIcon />
             </IconButton>
@@ -208,7 +208,7 @@ export default function DocumentPage() {
             </CardContent>
             <CardActions>
             {
-            MB2Count == 0 &&
+            MB2Count === 0 &&
             <IconButton color="primary" aria-label="add to shopping cart" onClick={(e) => setMB2Count(MB2Count + 1)}>
                 <AddShoppingCartIcon />
             </IconButton>
@@ -251,7 +251,7 @@ export default function DocumentPage() {
             </CardContent>
             <CardActions>
             {
-            LB1Count == 0 &&
+            LB1Count === 0 &&
             <IconButton color="primary" aria-label="add to shopping cart" onClick={(e) => setLB1Count(LB1Count + 1)}>
                 <AddShoppingCartIcon />
             </IconButton>
@@ -294,7 +294,7 @@ export default function DocumentPage() {
             </CardContent>
             <CardActions>
             {
-            LB2Count == 0 &&
+            LB2Count === 0 &&
             <IconButton color="primary" aria-label="add to shopping cart" onClick={(e) => setLB2Count(LB2Count + 1)}>
                 <AddShoppingCartIcon />
             </IconButton>
