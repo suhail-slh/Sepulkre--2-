@@ -25,6 +25,7 @@ import { fToNow } from '../../../utils/formatTime';
 // components
 import Iconify from '../../../components/iconify';
 import Scrollbar from '../../../components/scrollbar';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 // ----------------------------------------------------------------------
 
@@ -103,9 +104,11 @@ export default function NotificationsPopover() {
   return (
     <>
       <IconButton color={open ? 'primary' : 'default'} onClick={handleOpen} sx={{ width: 40, height: 40 }}>
-        <Badge badgeContent={totalUnRead} color="error">
+        {/* <Badge badgeContent={totalUnRead} color="error">
           <Iconify icon="eva:bell-fill" />
-        </Badge>
+        </Badge> */}
+        
+        <ShoppingCartIcon />
       </IconButton>
 
       <Popover
@@ -125,18 +128,15 @@ export default function NotificationsPopover() {
         <Box sx={{ display: 'flex', alignItems: 'center', py: 2, px: 2.5 }}>
           <Box sx={{ flexGrow: 1 }}>
             <Typography variant="subtitle1">Notifications</Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              You have {totalUnRead} unread messages
-            </Typography>
           </Box>
 
-          {totalUnRead > 0 && (
+          {/* {totalUnRead > 0 && (
             <Tooltip title=" Mark all as read">
               <IconButton color="primary" onClick={handleMarkAllAsRead}>
                 <Iconify icon="eva:done-all-fill" />
               </IconButton>
             </Tooltip>
-          )}
+          )} */}
         </Box>
 
         <Divider sx={{ borderStyle: 'dashed' }} />
@@ -173,7 +173,8 @@ export default function NotificationsPopover() {
 
         <Box sx={{ p: 1 }}>
           <Button fullWidth disableRipple>
-            View All
+            {/* View All */}
+            Checkout
           </Button>
         </Box>
       </Popover>

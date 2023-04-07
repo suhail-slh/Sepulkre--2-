@@ -60,19 +60,19 @@ export default function DashboardAppPage() {
 
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Days Time Left" total={7} icon={'ant-design:android-filled'} />
+            <AppWidgetSummary title="Days Time Left" total={7} icon={'icomoon-free:hour-glass'} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="New Users" total={15} color="info" icon={'ant-design:apple-filled'} />
+            <AppWidgetSummary title="New Users" total={15} color="info" icon={'mdi:people-group'} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Item Orders" total={1723315} color="warning" icon={'ant-design:windows-filled'} />
+            <AppWidgetSummary title="Item Orders" total={1723315} color="warning" icon={'ant-design:apartment-outlined'} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Precent profile complete"  total={15} color="error" icon={'ant-design:bug-filled'} />
+            <AppWidgetSummary title="Precent profile complete"  total={15} color="error" icon={'carbon:user-profile'} />
           </Grid>
 
           <Grid item xs={12} md={6} lg={8}>

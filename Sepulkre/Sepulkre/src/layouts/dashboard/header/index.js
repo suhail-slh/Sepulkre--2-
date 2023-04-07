@@ -11,7 +11,6 @@ import Searchbar from './Searchbar';
 import AccountPopover from './AccountPopover';
 import LanguagePopover from './LanguagePopover';
 import NotificationsPopover from './NotificationsPopover';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 // ----------------------------------------------------------------------
 
@@ -60,10 +59,6 @@ export default function Header({ onOpenNav }) {
 
         <Searchbar />
         <Box sx={{ flexGrow: 1 }} />
-          
-        <IconButton color="black" aria-label="add to shopping cart" onClick={(e) => setCount(count - 1)}>
-            <ShoppingCartIcon />
-        </IconButton>
 
         <Stack
           direction="row"

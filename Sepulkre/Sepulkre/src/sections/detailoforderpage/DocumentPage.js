@@ -30,6 +30,21 @@ export default function DocumentPage() {
     const [MB2Count, setMB2Count] = React.useState(0);
     const [LB1Count, setLB1Count] = React.useState(0);
     const [LB2Count, setLB2Count] = React.useState(0);
+    
+    React.useEffect(updateCart,[SB1Count, SB2Count, MB1Count, MB2Count, LB1Count, LB2Count]);
+
+    function updateCart() {
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                SB1Count, SB2Count, MB1Count, MB2Count, LB1Count, LB2Count
+            })
+        };
+        fetch("http://localhost:8090/cart/", requestOptions)
+            .then(res => res.text())
+            .then(res => alert("Your Order Id: " + res));
+    }
   
     return (
       <>
